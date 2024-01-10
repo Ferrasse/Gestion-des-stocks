@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      xmlns="http://www.w3.org/1999/html">
+<div class="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
+  <div class="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
+    <div class="p-8 bg-white md:flex-1">
+      <form action="#" class="flex flex-col space-y-5">
+      <div
+        class="p-3 py-0.5 text-white bg-blue-500 "
+      >
+      <h3 class="my-4 text-3xl font-semibold text-white "> Inscrivez-vous ici</h3>
+
+      </div>
+
+        <div class="flex flex-col space-y-1 ">
+
+          <input
+            type="text"
+            id="nom"
+            class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+            placeholder="Nom et Prénom"
+            oninput="toggleLabel(this)"
+          />
+        </div>
+        <div class="flex flex-col space-y-1">
+          <input
+            type="email"
+            id="email"
+            class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+            placeholder="Email"
+            oninput="toggleLabel(this)"
+          />
+        </div>
+
+        <div class="flex flex-col space-y-1">
+          <input
+            type="adresse"
+            id="adresse"
+            class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+            placeholder="Saisir votre adresse"
+            oninput="toggleLabel(this)"
+          />
+        </div>
+        <div class="flex flex-col space-y-1">
+          <input
+            type="ville"
+            id="ville"
+            class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+            placeholder="Saisir votre ville"
+            oninput="toggleLabel(this)"
+          />
+        </div>
+
+        <div class="flex flex-col space-y-1">
+          <input
+            [type]=" showPassword ? 'text' : 'password' "
+            id="password"
+            class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+            placeholder="Saisir votre Mot de passe"
+            oninput="toggleLabel(this)"
+          />
+          </div>
+          <div class="flex flex-col space-y-1">
+          <input
+            [type]=" showPassword ? 'text' : 'password' "
+            id="password2"
+            class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+            placeholder="Confirmer votre mot de passe"
+            oninput="toggleLabel(this)"
+          />
+
+          </div>
+
+
+
+
+
+        <div class="flex justify-items-center space-x-96 space-y-2">
+          <button
+            type="submit"
+            class="px-4 py-2 text-lg  text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4"
+          >
+            <i  class="fas fa-check text-white"></i>  S'inscrire
+          </button>
+          <div class="text-1.5xl text-lg font-semibold text-blue-600 hover:underline">
+          <a  [routerLink]="['/login']" class="btn btn-link">Se connecter</a>
+        </div>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
